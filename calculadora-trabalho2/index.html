@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Salário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>💰 Calculadora de Salário</h2>
+
+        <label for="salario">Salário Bruto</label>
+        <input
+            type="number"
+            id="salario"
+            placeholder="Digite o salário bruto"
+        >
+
+        <label for="dependentes">Dependentes</label>
+        <select id="dependentes">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <label for="pensao">Paga Pensão?</label>
+        <select id="pensao" onchange="mostrarPensao()">
+            <option value="nao">Não</option>
+            <option value="sim">Sim</option>
+        </select>
+
+        <div id="campoPensao">
+            <label for="valorPensao">Valor da Pensão</label>
+            <input
+                type="number"
+                id="valorPensao"
+                placeholder="Digite o valor da pensão"
+            >
+        </div>
+
+        <button onclick="calcular()">
+            Calcular
+        </button>
+
+        <div class="resultado">
+
+            <h3>Resultado</h3>
+
+            <p>
+                <strong>Salário Bruto:</strong>
+                R$ <span id="rSalario">0,00</span>
+            </p>
+
+            <p>
+                <strong>Valor INSS:</strong>
+                R$ <span id="rINSS">0,00</span>
+            </p>
+
+            <p>
+                <strong>Salário Base IR:</strong>
+                R$ <span id="rBase">0,00</span>
+            </p>
+
+            <p>
+                <strong>Valor IR:</strong>
+                R$ <span id="rIR">0,00</span>
+            </p>
+
+            <p>
+                <strong>Salário Líquido:</strong>
+                R$ <span id="rLiquido">0,00</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+.container{
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h2{
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: .3s;
+}
+
+input:focus,
+select:focus{
+    border-color: #2a5298;
+}
+
+button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #2a5298;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background: #1e3c72;
+    transform: scale(1.03);
+}
+
+#campoPensao{
+    display: none;
+}
+
+.resultado{
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f7ff;
+    border-radius: 12px;
+    border-left: 5px solid #2a5298;
+}
+
+.resultado p{
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+span{
+    font-weight: bold;
+    color: #1e3c72;
+}
